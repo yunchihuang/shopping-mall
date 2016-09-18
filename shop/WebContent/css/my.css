@@ -1,0 +1,419 @@
+/* 通用的CSS */
+a:hover, a:focus {
+	text-decoration: none;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1170px;
+	min-width: 960px;
+}
+
+/* 顶部的工具栏 */
+#toolbar {
+	height: 35px;
+	line-height: 30px;
+	font-family: fantasy;
+	font-size: 10px;
+	color: #FF9933;
+	background-color: #fff;
+}
+
+/*工具栏里的a标签*/
+#toolbar a {
+	border-right: 1px solid #e5e5e5;
+	padding: 0 15px;
+	color: #FF9933;
+	text-decoration: none;
+}
+
+/*顶部的主题部分 */
+#subject {
+	min-height: 100px;
+}
+
+#logo {
+	padding: 25px 0;
+}
+
+#search {
+	padding: 35px 0 20px 0;
+}
+
+#cart {
+	padding: 30px 0 20px 0;
+	text-align: right;
+}
+
+/*导航栏*/
+#navbar {
+	margin-bottom: 13px;
+}
+
+.categories {
+	max-width: 200px;
+	background-color: #6633CC;
+	margin-right: 40px;
+	float: left;
+	position: relative;
+}
+
+/*所有分类标题*/
+#title {
+	color: #ffffff;
+	height: 40px;
+	line-height: 40px;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+/*分类列表菜单*/
+#menu {
+	width: 200px;
+	background-color: #6633CC;
+	position: absolute;
+	left: 0;
+	top: 41px;
+	z-index: 100;
+}
+
+#menu>ul {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+#menu>ul>li {
+	background-color: #6633CC;
+	margin: 0;
+	color: #fff;
+	border-left: 2px solid #6633CC;
+	border-bottom: 1px solid #6633CC;
+}
+
+#menu>ul>li>a {
+	width: 100%;
+	padding: 10px;
+	display: block;
+	color: #fff;
+}
+
+#menu>ul>li:hover {
+	background-color: #fff;
+}
+
+#menu>ul>li:hover>a {
+	color: #dd4142;
+}
+
+.director {
+	float: right;
+	font-size: 18px;
+}
+
+/*子分类*/
+.sub-list {
+	position: absolute;
+	top: 0;
+	left: 200px;
+	width: 120px;
+	height: 294px;
+	border-right: 1px solid #8666B8;
+	border-bottom: 1px solid #8666B8;
+	padding: 5px 10px;
+	display: none;
+	background-color: #fff;
+}
+
+.sub-list>li {
+	display: block;
+	height: 38px;
+	line-height: 38px;
+	text-decoration: none;
+	text-align: center;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.sub-list>li>a {
+	color: #555;
+}
+
+/*导航项*/
+.navbar-nav li a {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+/*轮播图*/
+#myNiceCarousel {
+	margin-left: 200px;
+}
+
+.carousel-indicators .active {
+	width: 12px;
+	height: 12px;
+	margin: 0;
+	background-color: #6633cc;
+}
+
+/*新闻*/
+#news ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#news ul li {
+	height: 30px;
+	line-height: 30px;
+}
+
+#news ul li a {
+	color: #666;
+}
+
+#news ul li a:hover {
+	text-decoration: underline;
+	color: #6633cc;
+}
+
+#news ul li a.hot {
+	color: #6633cc;
+}
+
+/**商品列表*/
+.list {
+	padding: 0;
+	margin-top: 8px;
+	margin-bottom: 24px;
+}
+
+.cards-condensed .card:hover {
+	border: 1px solid #6633cc;
+}
+
+/*页面底部*/
+#footer {
+	border: none;
+	padding: 0;
+	background: #353535;
+	color: #aaa;
+	height: 90px;
+	line-height: 90px;
+}
+
+/*右侧固定定位的浮动栏*/
+.slidebar {
+	position: fixed;
+	right: 0px;
+	top: 300px;
+	background-color: #ffffff;
+	z-index: 9999;
+}
+/**QQ客服*/
+.slidebar-qq {
+	width: 49px;
+	height: 50px;
+	background-image: url("../images/r_qq.png");
+	background-color: #6633CC;
+	border-bottom: 1px solid #fff;
+	cursor: pointer;
+	position: relative;
+}
+
+.slidebar-qq .qq {
+	background-color: #fff;
+	border: 1px solid #DDD;
+	border-right: none;
+	position: absolute;
+	width: 159px;
+	left: -160px;
+	top: 0px;
+	line-height: 50px;
+	color: #FFF;
+	font-size: 18px;
+	padding: 10px 0;
+	display: none;
+}
+
+.slidebar-qq .qq p {
+	font-size: 12px;
+	height: 23px;
+	line-height: 23px;
+	padding: 4px 12px;
+}
+
+/*客户电话*/
+.slidebar-phone {
+	width: 49px;
+	height: 50px;
+	background-image: url("../images/r_phone.png");
+	background-color: #fbb01f;
+	border-bottom: 1px solid #fff;
+	cursor: pointer;
+	position: relative;
+}
+
+.slidebar-phone:hover {
+	background-color: #ff811b;
+}
+
+.slidebar-phone .phone {
+	background-color: #ff811b;
+	position: absolute;
+	width: 160px;
+	left: -160px;
+	top: 0px;
+	line-height: 49px;
+	color: #FFF;
+	font-size: 18px;
+	text-align: center;
+	display: none;
+}
+
+/*微信公众号*/
+.slidebar-wx {
+	width: 49px;
+	height: 50px;
+	background-image: url("../images/r_wx.png");
+	background-color: #0000CC;
+	border-bottom: 1px solid #fff;
+	cursor: pointer;
+	position: relative;
+}
+
+.slidebar-wx .pic {
+	border: 1px solid #DDD;
+	width: 150px;
+	height: 150px;
+	max-width: none;
+	position: absolute;
+	left: -150px;
+	top: -100px;
+	display: none;
+}
+
+/*滚动到顶部组件的样式*/
+#scrollUp {
+	background-image: url("../images/r_top.png");
+	width: 49px;
+	height: 50px;
+	background-color: #ccc;
+	position: fixed;
+	top: 450px;
+	right: 0px;
+}
+
+/**广告*/
+#ad {
+	width: 80px;
+	height: 160px;
+	background-color: 6633cc;
+	position: fixed;
+	top: 300px;
+	left: 20px;
+}
+
+/****公告详情页*************/
+/**/
+#news_detail {
+	margin-top: 20px;
+	min-height: 400px;
+	padding: 15px 30px;
+}
+
+#news_detail .panel-heading {
+	padding-bottom: 10px;
+	text-align: center;
+	font-size: 20px;
+	background-color: #ffffff;
+}
+
+#news_detail .panel-heading #pubtime {
+	font-size: 13px;
+	margin: 10px 0 0;
+	color: #999;
+}
+
+#news_detail .panel-body {
+	padding: 30px 10px;
+	color: #666;
+}
+
+/***************公告列表*****************/
+#news_list .panel-heading {
+	padding: 15px 0 10px 20px;
+	font-size: 20px;
+}
+
+#news_list .table {
+	font-size: 16px;
+}
+
+#news_list .table td {
+	padding: 20px 30px;
+}
+
+/************商品列表页************/
+.breadcrumb {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+.cards-products .col-xs-2 {
+	padding-top: 15px;
+	border: 1px solid #e5e5e5;
+	margin: 5px;
+	width: 19%;
+}
+
+.cards-products .col-xs-2:hover {
+	border: 1px solid #6633cc;
+}
+
+/***********商品详情页************/
+.product-image {
+	height: 300px;
+	line-height: 300px;
+	border: 1px solid #ddd;
+	text-align: center;
+}
+
+.product-property .attr-name, .product-property .attr-value {
+	padding: 8px 6px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.product-property .attr-name {
+	width: 80px;
+	padding-right: 15px;
+	text-align: right;
+}
+
+#product-hot .card {
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #e5e5e5;
+}
+
+#product-hot .card:last-child {
+	border-bottom: none;
+}
+
+/********购物车********/
+.table td {
+	vertical-align: middle;
+}
+
+/****会员后台 订单列表*********/
+#mymenu .icon-chevron-right {
+	float: right;
+	margin-top: 3px;
+	opacity: .75;
+}
+
+.panel-actions {
+	float: right;
+	margin-top: -6px;
+	margin-right: -10px;
+}
